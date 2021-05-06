@@ -1,5 +1,5 @@
 import React from "react"
-import {Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Typography } from '@material-ui/core'
+import {Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia} from '@material-ui/core'
 import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import {
     FacebookIcon,
