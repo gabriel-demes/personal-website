@@ -6,20 +6,29 @@ import styled from 'styled-components'
 
 const Section = styled.section`
     margin:0;
-    padding-top:3em;
-    height: 100vh;
+    padding-top:5em;
     width: 100vw;
-    background-color: #CCCCCC;
+    height: 100vh;
+    background-color: #fff;
     background-size: cover;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 `
 
 const Div = styled.div`
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     overflow-x: scroll;
+    width: 80vw;
+    margin: auto
+
+`
+const H1 = styled.h1`
+    margin:0;
+    padding:0;
+    font-size: xx-large;
 `
 const BlogContainer = () => {
 
@@ -38,9 +47,9 @@ const BlogContainer = () => {
     
 
     return(
-        <Section>
-            <h1>BLOGS</h1>
-            <Div>
+        <Section id="blogs">
+            <H1>BLOGS</H1>
+            <Div className="blog-container">
                 {displayBlogs}
             </Div>
         </Section>

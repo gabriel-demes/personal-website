@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.blog-container::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar > .active {
+  border-bottom: 1px solid white;
+}
+
+h1{
+  color:#14a2b8
+}
+h2{
+  color:#14a2b8
+}
+
+i {
+  color:#14a2b8;
+}
+strong{
+  color:#14a2b8;
+}
+.contacticon{
+  cursor:pointer;
+}

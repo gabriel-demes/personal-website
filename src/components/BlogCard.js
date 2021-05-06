@@ -1,24 +1,46 @@
 import React from "react"
-import { Button, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Typography } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import {Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Typography } from '@material-ui/core'
+import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core/styles';
+import {
+    FacebookIcon,
+    FacebookShareButton,  
+    LinkedinIcon, 
+    LinkedinShareButton,
+    TwitterIcon,
+    TwitterShareButton
+} from "react-share"
+
 
 const useStyles = makeStyles({
     root: {
-      maxWidth: 345,
+        maxWidth: 345,
+        backgroundColor: "#eee",
+        margin: "2em",
+        alignSelf: "auto",
+        fontFamily: `'Montserrat', sans-serif`,
+        
     },
     media: {
-      height: 140,
+        height: 140,
     },
-  });
+});
 
 
 const BlogCard = ({blog}) => {
     const classes = useStyles();
+    const theme = createMuiTheme({
+        typography: {
+          fontFamily: [
+            'Montserrat',
+            'sans-serif',
+          ].join(','),
+        },});
     return (
-
-        <Card className={classes.root}>
+        <ThemeProvider theme={theme}>
+        <div style={{flex: "10 0 auto"}}>
+        <Card className={classes.root} raised={true} >
             <CardActionArea>
-                <a href={blog.link}>
+                <div onClick={()=> window.open(blog.link, '_blank')}>
             <CardHeader
                 title={blog.title}
                 subheader={new Date(blog.pubDate).toDateString()}
@@ -32,13 +54,24 @@ const BlogCard = ({blog}) => {
             <CardContent>
                 
             </CardContent>
-            </a>code 
+            </div>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary"> Share</Button>
+                
+                <FacebookShareButton url={blog.link}>
+                    <FacebookIcon round size={40}/>
+                </FacebookShareButton>
+                <TwitterShareButton url={blog.link}>
+                    <TwitterIcon round size={40}/>
+                </TwitterShareButton>
+                <LinkedinShareButton url={blog.link}>
+                    <LinkedinIcon round size={40}/>
+                </LinkedinShareButton>
             </CardActions>
 
         </Card>
+        </div>
+        </ThemeProvider>
     )
 }
 
