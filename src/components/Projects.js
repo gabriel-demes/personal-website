@@ -6,7 +6,6 @@ import Frello from '../images/Frello.png'
 import MomentJournal from '../images/MomentJournal.png'
 import MockTube from '../images/MockTube.png'
 import {DiReact,DiRor,DiPostgresql, DiJavascript1} from "react-icons/di"
-import {Roll} from 'react-reveal'
 const Section = styled.section`
     margin:0;
     padding-top:3em;
