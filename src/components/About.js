@@ -31,6 +31,8 @@ const Container = styled.div`
 
 const ContentDiv = styled.div`
     flex: 1 1 0px;
+    padding-right:2em;
+    padding-bottom: 10em
 `
 
 const H1 = styled.h1`
@@ -39,9 +41,9 @@ const H1 = styled.h1`
     font-size: xx-large;
 `
 const Img = styled.img`
-    border-radius:50%;
-    width: 30em;
-    height: 30em;
+     border-radius:20%;
+    width: 95%;
+    height: auto;
 `
 const P = styled.p`
     line-height: 2.0;
