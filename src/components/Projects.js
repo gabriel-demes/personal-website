@@ -74,15 +74,15 @@ const Projects = () => {
                     
                     <h2>MomentJournal</h2>
                     <ul>
-                        <Roll>
-                            <Li>Journaling application that integrates speech-to-text functionality, offering greater accessibility to online journaling</Li>
-                        </Roll>
-                        <Roll>
-                            <Li>Incorporates Google's Natural Language API </Li>
-                        </Roll>
-                        <Roll>
-                            <Li>Uses React-Speech-Recognition hook for speech-to-text capabilities</Li>
-                        </Roll>
+                    
+                        <Li>Journaling application that integrates speech-to-text functionality, offering greater accessibility to online journaling</Li>
+                    
+                    
+                        <Li>Incorporates Google's Natural Language API </Li>
+                    
+                    
+                        <Li>Uses React-Speech-Recognition hook for speech-to-text capabilities</Li>
+                    
                         <Tooltip placement="bottom" title="React">
                             <span><DiReact size={50} color="#61DBFB"/></span>
                         </Tooltip>
@@ -102,15 +102,15 @@ const Projects = () => {
                 <Grid className={classes.card} item xs={6} style={{paddingTop:"3em"}}>
                     <h2>MockTube</h2>
                     <ul>
-                        <Roll>
+                        
                             <Li>Video streaming application designed as a YouTube Clone.</Li>
-                        </Roll>
-                        <Roll>
+                        
+                        
                             <Li>Integrates Web Sockets using Action Cable to build a real-time comments section</Li>
-                        </Roll>
-                        <Roll>
+                        
+                        
                             <Li>Implements backend external Cloudinary API calls allowing users to persist image and video files to the database</Li>
-                        </Roll>
+                        
                         <Tooltip placement="bottom" title="React">
                             <span><DiReact size={50} color="#61DBFB"/></span>
                         </Tooltip>
@@ -169,15 +169,15 @@ const Projects = () => {
                 <Grid className={classes.card} item xs={6} style={{paddingTop:"3em"}}>
                 <h2>Frello</h2>
                     <ul>
-                        <Roll>
+                        
                             <Li>Task management application allowing organizations and users to easily track project progressions based on Trello</Li>
-                        </Roll>
-                        <Roll>
+                        
+                        
                             <Li>Uses Rails API backend following RESTful routing principles with multiple endpoints for entries</Li>
-                        </Roll>
-                        <Roll>
+                        
+                        
                             <Li>Integrates user authentication features using Rails validations for user and organization protection</Li>
-                        </Roll>
+                        
                         <Tooltip placement="bottom" title="JavaScript">
                             <span><DiJavascript1 size={50} color="#F0DB4F"/></span>
                         </Tooltip>
