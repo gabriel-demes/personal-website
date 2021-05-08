@@ -3,9 +3,10 @@ import styled from "styled-components"
 import {Zoom} from 'react-reveal'
 import StockImage1 from '../images/StockImage1.jpg'
 import Typist from 'react-typist';
-import { Button } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import {Link} from "react-scroll"
+import {BsChevronDoubleDown} from "react-icons/bs"
 const Section = styled.section`
     margin:0;
     padding:0;
@@ -29,7 +30,8 @@ const useStyles = makeStyles({
         color: "#14a2b8",
         backgroundColor:"#eee",
         fontSize: "medium",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginTop: "5em"
     },
 });
 
@@ -47,7 +49,7 @@ const Landing = () => {
                         smooth="true"
                         duration={750}
                         offset={-40}>
-                    <Button className={classes.root} variant="contained">Enter GabrielDemes.com</Button>
+                    <IconButton className={classes.root} variant="contained"> <BsChevronDoubleDown size={40} /></IconButton>
                     </Link>
                     </H1>
                 </Section>
