@@ -66,7 +66,7 @@ const Navbar = () => {
                     duration={500}
                     offset={0}
                 >
-                    <Button className={classes.button}>BLOGS</Button>
+                    <Button className={classes.button}>ARTICLES</Button>
                 </Link>
                 <Button onClick={()=> window.open(Resume5_5_21, '_blank')} className={classes.button}>RESUME</Button>
             </Toolbar>

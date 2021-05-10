@@ -47,7 +47,7 @@ const BlogContainer = () => {
 
     return(
         <Section id="blogs">
-            <H1>BLOGS</H1>
+            <H1>ARTICLES</H1>
             <Div className="blog-container">
                 {displayBlogs}
             </Div>
